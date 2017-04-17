@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <TextBox x:Name="horaText" HorizontalAlignment="Left" Height="23" Margin="45,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="45,47,0,0" TextWrapping="Wrap" Text="Hora actual" VerticalAlignment="Top" Height="13" Width="120"/>
+        <TextBox x:Name="hora" HorizontalAlignment="Left" Height="23" Margin="265,65,0,0" TextWrapping="Wrap" Text="hh" VerticalAlignment="Top" Width="48"/>
+        <TextBox x:Name="minutos" HorizontalAlignment="Left" Height="23" Margin="318,65,0,0" TextWrapping="Wrap" Text="mm" VerticalAlignment="Top" Width="46" RenderTransformOrigin="-0.831,2.088"/>
+        <TextBlock HorizontalAlignment="Left" Margin="265,47,0,0" TextWrapping="Wrap" Text="Alarma" VerticalAlignment="Top" Height="13" Width="120"/>
+        <Button x:Name="activarAlarma" Content="Bloquear/Des" HorizontalAlignment="Left" Margin="384,65,0,0" VerticalAlignment="Top" Width="114" Click="activarAlarma_Click"/>
+        <Menu HorizontalAlignment="Left" Height="22" VerticalAlignment="Top" Width="517">
+            <MenuItem Header="Salir" Click="salir"/>
+            <MenuItem Header="Ayuda" Click="ayuda"/>
+        </Menu>
+        <CheckBox x:Name="cbUsarDefault" Content="Guardar alarma actual" HorizontalAlignment="Left" Margin="265,93,0,0" VerticalAlignment="Top" Click="cbUsarDefault_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="265,47,0,0" TextWrapping="Wrap" Text="Alarma" VerticalAlignment="Top" Height="13" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="371,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="18" Width="141"><Run Text="Cargar "/><Run Text="a"/><Run Text="larma"/><Run Text=" por defecto"/></TextBlock>
+
+
+
+
+    </Grid>
+</Window>
